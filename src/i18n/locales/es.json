@@ -1,0 +1,236 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "solutions": "Soluciones",
+    "brands": "Marcas",
+    "isoft": "Plataforma iSoft",
+    "contact": "Contacto",
+    "cta": "Contáctanos"
+  },
+  "hero": {
+    "title": "En Indutelsa Ponemos en Práctica Soluciones Reales",
+    "subtitle": "Brindamos mejoras continuas a sus procesos productivos mediante la integración especializada en tecnología industrial, automatización, Industria 4.0 e IoT.",
+    "cta1": "Nuestras Soluciones",
+    "cta2": "Contáctanos"
+  },
+  "metrics": {
+    "disciplines": "Disciplinas",
+    "disciplinesLabel": "Especializadas en automatización",
+    "brands": "Marcas Líderes",
+    "brandsLabel": "Distribución e integración autorizada",
+    "commitment": "Compromiso",
+    "commitmentLabel": "Soluciones reales garantizadas",
+    "support": "Soporte Técnico",
+    "supportLabel": "Asesoría en planta personalizada"
+  },
+  "about": {
+    "badge1": "Tecnología Industrial",
+    "badge2": "Compromiso de Calidad",
+    "title1": "Industria 4.0 & IoT",
+    "title2": "Prioridad Indutelsa",
+    "desc1": "Somos una empresa que PONE EN PRÁCTICA soluciones REALES para la Industria 4.0 así como soluciones para IoT (Internet de las cosas).",
+    "desc2": "La integración del equipo de control con la plataforma de administración, la adquisición de datos en tiempo real y medición de variables de productividad, son nuestros principales objetivos.",
+    "feature1": "Propuestas comerciales con alto costo-beneficio",
+    "feature2": "Mejora continua para procesos productivos",
+    "feature3": "Soporte técnico e integración en planta",
+    "stat1Value": "100%",
+    "stat1Label": "Adquisición de Datos",
+    "stat2Value": "Real-Time",
+    "stat2Label": "Medición de Variables"
+  },
+  "solutions": {
+    "title": "Nuestras Disciplinas y Soluciones",
+    "subtitle": "Cubrimos el espectro completo de necesidades tecnológicas para la industria moderna.",
+    "items": {
+      "automation": {
+        "title": "Automatización",
+        "tag": "Control & PLC",
+        "desc": "PLC, PAC (sin costo de software, incl. emuladores), Redes (Ethernet, Profibus, Modbus), Pantallas HMI, Accesorios. Compatibilidad con AB, Siemens, etc."
+      },
+      "sensors": {
+        "title": "Sensores",
+        "tag": "Detección",
+        "desc": "Campos electromagnéticos (radar), RFID (radiofrecuencia), Instrumentación: ultrasónicos, temperatura, humedad relativa, pesaje. Discretos: fotoeléctricos, inductivos, capacitivos."
+      },
+      "vision": {
+        "title": "Visión",
+        "tag": "Inspección Óptica",
+        "desc": "Sensores de visión, smart cameras, procesadores de visión para inspección y control de calidad."
+      },
+      "traceability": {
+        "title": "Trazabilidad",
+        "tag": "RFID & Barcode",
+        "desc": "Marcación láser, escáneres fijos, escáneres manuales para rastreo de producción."
+      },
+      "safety": {
+        "title": "Seguridad",
+        "tag": "Normativa",
+        "desc": "Tapetes, cortinas, escáner, Interlocks, PB, OptoTouch. Controladores de seguridad."
+      },
+      "isoft": {
+        "title": "iSoft",
+        "tag": "Software Industrial",
+        "desc": "Interfases de software, plataformas de control y visualización personalizadas."
+      }
+    }
+  },
+  "brands": {
+    "title": "Marcas que Representamos",
+    "subtitle": "Distribuimos e integramos las marcas líderes globales en automatización industrial.",
+    "viewAll": "Ver todas las marcas",
+    "items": {
+      "turck": {
+        "name": "Turck",
+        "desc": "Sensores inductivos, fotoeléctricos, buses de campo IP67 y tecnología RFID."
+      },
+      "patlite": {
+        "name": "Patlite",
+        "desc": "Torres de señalización LED, avisadores acústicos y sistemas visuales Andon."
+      },
+      "meltric": {
+        "name": "Meltric",
+        "desc": "Clavijas y receptáculos industriales con desconexión segura Decontactor™."
+      },
+      "banner": {
+        "name": "Banner Engineering",
+        "desc": "Sensores fotoeléctricos, visión artificial e iluminación industrial LED."
+      },
+      "woerner": {
+        "name": "Woerner",
+        "desc": "Sistemas centralizados de lubricación y dosificación de precisión."
+      },
+      "altech": {
+        "name": "Altech Corp",
+        "desc": "Componentes eléctricos, protección de circuitos y control en riel DIN."
+      },
+      "delta": {
+        "name": "Delta Electronics",
+        "desc": "Variadores de frecuencia, PLCs, HMIs, servomotores y control de movimiento."
+      },
+      "datalogic": {
+        "name": "Datalogic",
+        "desc": "Lectores de código de barras, visión artificial, seguridad industrial."
+      }
+    }
+  },
+  "platform": {
+    "badge": "Nuestra Plataforma",
+    "title": "iSoft — Software Industrial a la Medida",
+    "subtitle": "Contamos con nuestra propia plataforma de software para personalizar cualquier interfase gráfica.",
+    "features": {
+      "databases": {
+        "title": "Bases de Datos",
+        "desc": "Gestión centralizada de información productiva."
+      },
+      "maps": {
+        "title": "Mapas Interactivos de Planta",
+        "desc": "Visualización dinámica del layout de producción."
+      },
+      "monitoring": {
+        "title": "Monitoreo en Tiempo Real",
+        "desc": "Monitoreo de condiciones y control de variables en tiempo real."
+      },
+      "reports": {
+        "title": "Reportes Productivos",
+        "desc": "Reportes de estado productivo y centralización de la información."
+      }
+    }
+  },
+  "contact": {
+    "badge": "Contacto",
+    "title": "Permítanos Atenderle",
+    "subtitle": "Estamos listos para atender sus proyectos de automatización.",
+    "eyebrow": "CONTACTO COMERCIAL",
+    "directEyebrow": "CONTACTO DIRECTO",
+    "directTitle": "Atención a Empresas",
+    "directDesc": "Analizamos requerimientos de ingeniería, soporte y automatización ofreciendo propuestas comerciales con alto costo-beneficio.",
+    "phoneLabel": "TELÉFONOS DE PLANTA",
+    "emailLabel": "CORREO ELECTRÓNICO",
+    "addressLabel": "UBICACIÓN DE PLANTA",
+    "companyNote": "Indutelsa S.A. de C.V. — Tecnología e Integración Industrial.",
+    "form": {
+      "nameLabel": "NOMBRE COMPLETO",
+      "namePlaceholder": "Nombre",
+      "companyLabel": "EMPRESA",
+      "companyPlaceholder": "Empresa",
+      "emailLabel": "CORREO ELECTRÓNICO",
+      "emailPlaceholder": "Correo",
+      "phoneLabel": "TELÉFONO MÓVIL / OFICINA",
+      "phonePlaceholder": "Teléfono",
+      "solutionLabel": "SOLUCIÓN REQUERIDA",
+      "solutionSelect": "-- Selecciona una solución --",
+      "messageLabel": "MENSAJE / ESPECIFICACIONES DEL PROYECTO",
+      "messagePlaceholder": "Mensaje",
+      "submit": "Enviar Solicitud de Cotización",
+      "successTitle": "¡Solicitud Enviada!",
+      "successDesc": "Gracias por contactarnos. Un ingeniero especialista se pondrá en contacto con usted a la brevedad.",
+      "successAgain": "Enviar otra consulta"
+    }
+  },
+  "footer": {
+    "description": "Soluciones integrales de automatización industrial, Industria 4.0 e IoT de alta calidad para el sector productivo.",
+    "navTitle": "NAVEGACIÓN",
+    "brandsTitle": "MARCAS",
+    "contactTitle": "CONTACTO",
+    "developedBy": "DESARROLLADO POR:",
+    "about": "Nosotros",
+    "rights": "Todos los derechos reservados."
+  },
+  "brandsPage": {
+    "title": "Nuestras Marcas",
+    "subtitle": "Distribuimos e integramos las marcas líderes globales en automatización industrial, ofreciendo asesoría técnica, suministro y soporte para toda la gama de productos.",
+    "promptText": "¿Necesita componentes o asesoría para {name}?",
+    "quoteBtn": "Solicitar Cotización",
+    "officialSiteBtn": "Sitio Oficial",
+    "linesTitle": "Líneas de Productos & Soluciones",
+    "bottomCta": {
+      "title": "¿Busca otra marca o solución específica?",
+      "subtitle": "En Indutelsa integramos componentes de las mejores marcas del mercado. Contáctenos para asesoría personalizada.",
+      "cta": "Contáctanos"
+    },
+    "turck": {
+      "name": "Turck",
+      "fullDesc": "Turck es pionero y líder mundial en tecnología de sensores industriales, buses de campo robustos (IP67), sistemas RFID para entornos hostiles y conectividad industrial multiprotocolo.",
+      "products": ["Sensores Inductivos, Fotoeléctricos, Ultrasónicos", "Módulos I/O IP67 (TBEN-S, TBEN-L)", "Sistemas RFID Industriales (HF & UHF)", "Conectividad y Cableado M8, M12", "Maestros IO-Link"]
+    },
+    "patlite": {
+      "name": "Patlite",
+      "fullDesc": "Patlite es el referente global en torretas de señalización óptica y acústica para la optimización de procesos de manufactura y sistemas Andon.",
+      "products": ["Torretas de Señalización LED (Serie LR)", "Torretas de Red Ethernet/PoE", "Señalización Acústica y Alarmas de Voz", "Iluminación LED Industrial IP67/IP69K", "Sistema Inalámbrico AirGRID"]
+    },
+    "meltric": {
+      "name": "Meltric",
+      "fullDesc": "Meltric fabrica conectores de potencia de máxima seguridad con tecnología patentada Decontactor™ para desconexión rápida bajo carga.",
+      "products": ["Decontactor™ Serie DSN (20A-150A)", "Conectores Serie DS Servicio Pesado", "Conectores Multipolares (hasta 37 pines)", "Dispositivos para Áreas Peligrosas", "Cajas de Combinación y Distribución"]
+    },
+    "banner": {
+      "name": "Banner Engineering",
+      "fullDesc": "Banner Engineering es líder mundial en sensores fotoeléctricos, ultrasónicos, sistemas de iluminación industrial LED, redes inalámbricas Sure Cross® y sensores de visión para control de calidad.",
+      "products": ["Sensores Fotoeléctricos y Láser de Alta Precisión", "Sensores Ultrasónicos y Medidores de Distancia", "Luces de Verificación e Iluminación Industrial LED", "Redes Inalámbricas Industriales Sure Cross®", "Sensores de Visión VE y Cámaras Inteligentes"]
+    },
+    "woerner": {
+      "name": "Woerner",
+      "fullDesc": "Woerner es especialista alemán en ingeniería de lubricación industrial con sistemas centralizados de grasa y aceite de alta precisión para maquinaria pesada.",
+      "products": ["Sistemas de Lubricación Progresiva", "Distribuidores Progresivos VPA/VPB/VPC", "Bombas Eléctricas y Neumáticas de Alta Presión", "Monitores de Flujo y Sensores de Presión", "Sistemas de Microlubricación (MQL)"]
+    },
+    "altech": {
+      "name": "Altech Corp",
+      "fullDesc": "Altech Corp ofrece componentes para ensamble de tableros de control y automatización industrial con certificaciones internacionales UL, CSA y CE.",
+      "products": ["Interruptores Termomagnéticos (MCB)", "Clemas y Bloques de Conexión Riel DIN", "Fuentes de Alimentación Industrial", "Gabinetes y Cajas IP66/IP67", "Botonería Industrial 22mm y 30mm"]
+    },
+    "delta": {
+      "name": "Delta Electronics",
+      "fullDesc": "Delta Electronics es líder mundial en variadores de frecuencia, servosistemas, PLCs de alto rendimiento, pantallas HMI y fuentes de poder industriales.",
+      "products": ["Variadores de Frecuencia MS300/C2000+", "PLCs Modulares Serie AS y DVP", "Pantallas HMI Táctiles DOP-100", "Servomotores y Controladores ASDA-A3", "Fuentes de Poder Industriales CliQ"]
+    },
+    "datalogic": {
+      "name": "Datalogic",
+      "fullDesc": "Datalogic es pionero mundial en soluciones de captura automática de datos, trazabilidad industrial, visión artificial y seguridad optoelectrónica.",
+      "products": ["Lectores Fijos Industriales Matrix 120/220/320", "Lectores Portátiles de Uso Rudo PowerScan 9600", "Sensores de Visión Inteligentes SmartVS", "Cortinas de Seguridad Industriales SG4", "Sistemas de Marcado Láser Industrial"]
+    }
+  },
+  "contactPage": {
+    "title": "Contáctanos",
+    "subtitle": "Estamos listos para atender sus proyectos de automatización. Complete el formulario o contáctenos directamente."
+  }
+}

@@ -1,0 +1,199 @@
+.eyebrowTag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+/* Left Card: Direct Contact Info (media_1787842001886.png structure) */
+.infoCard {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+}
+
+.cardEyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.cardHeaderTitle {
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: var(--color-black);
+  margin-bottom: 14px;
+}
+
+.cardDesc {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: 32px;
+  font-weight: 400 !important;
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.infoRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.iconCircle {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: #ffd600; /* Intense Brand Yellow */
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(255, 214, 0, 0.35);
+}
+
+.infoLabel {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.infoVal {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-black);
+  line-height: 1.4;
+}
+
+.infoVal a {
+  color: var(--color-black);
+  transition: opacity var(--transition-fast);
+}
+
+.infoVal a:hover {
+  opacity: 0.75;
+}
+
+.footerNote {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid var(--color-border-light);
+  font-weight: 400 !important;
+}
+
+/* Right Card: Quote Form (media_1787842001886.png structure) */
+.formCard {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: 40px 36px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formRow2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-black);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.input,
+.select,
+.textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-alt);
+  font-size: 0.9375rem;
+  color: var(--color-black);
+  transition: all var(--transition-fast);
+  outline: none;
+  font-weight: 400 !important;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  border-color: #000000;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.06);
+}
+
+.submitBtn {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.successState {
+  text-align: center;
+  padding: 48px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.successIcon {
+  color: #10b981;
+}
+
+@media (max-width: 900px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .formRow2 {
+    grid-template-columns: 1fr;
+  }
+}

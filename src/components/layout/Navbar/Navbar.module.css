@@ -1,0 +1,283 @@
+.header {
+  position: fixed;
+  top: 16px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  padding: 0 var(--container-padding);
+  pointer-events: none;
+}
+
+/* Floating Navigation Bar Container */
+.navbar {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: var(--container-max);
+  padding: 10px 24px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  transition: all var(--transition-smooth);
+}
+
+.scrolled .navbar {
+  padding: 8px 20px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  filter: invert(1) brightness(0);
+  height: auto;
+  width: 125px;
+  transition: opacity var(--transition-fast);
+}
+
+.logoImage:hover {
+  opacity: 0.85;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Nav item button style with icons */
+.navLink {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  padding: 8px 14px;
+  border-radius: 10px;
+  transition: all var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.linkIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #71717a;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.navLink:hover {
+  color: var(--color-black);
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.navLink:hover .linkIcon {
+  color: var(--color-black);
+  transform: translateY(-1px);
+}
+
+/* Clean active item highlight (no black box background) */
+.activeNavLink {
+  background: rgba(0, 0, 0, 0.07) !important;
+  color: var(--color-black) !important;
+  font-weight: 600;
+}
+
+.activeNavLink .linkIcon {
+  color: var(--color-black) !important;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Language Switcher Capsule Toggle */
+.langCapsule {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px 4px 3px 10px;
+  background: #f4f4f5;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.globeIcon {
+  width: 14px;
+  height: 14px;
+  color: #71717a;
+  margin-right: 2px;
+}
+
+.langPillOption {
+  padding: 3px 8px;
+  border-radius: 6px;
+  color: #71717a;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.langPillOption:hover {
+  color: var(--color-black);
+}
+
+.activeLangPill {
+  background: var(--color-black);
+  color: var(--color-white) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Primary CTA button */
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: 10px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all var(--transition-fast);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+.ctaButton:hover {
+  background-color: #27272a;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.ctaIcon {
+  width: 14px;
+  height: 14px;
+  transition: transform var(--transition-fast);
+}
+
+.ctaButton:hover .ctaIcon {
+  transform: translateX(3px);
+}
+
+.hamburger {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  color: var(--color-black);
+}
+
+/* Mobile Drawer */
+.mobileDrawer {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: var(--container-padding);
+  right: var(--container-padding);
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  pointer-events: auto;
+  animation: appear 0.3s ease forwards;
+}
+
+.mobileNavLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mobileNavLink {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-text);
+  padding: 10px 14px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background var(--transition-fast);
+}
+
+.mobileNavLink:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.mobileActions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 6px;
+}
+
+.mobileLangCapsule {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: #f4f4f5;
+  border-radius: 10px;
+}
+
+.mobileLangBtn {
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #71717a;
+}
+
+.activeMobileLang {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.mobileCtaButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background: var(--color-black);
+  color: var(--color-white);
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .navLinks,
+  .actions {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

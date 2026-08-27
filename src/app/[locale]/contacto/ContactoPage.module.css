@@ -1,0 +1,33 @@
+.pageWrapper {
+  padding-top: 80px;
+}
+
+.pageHeader {
+  padding: 100px 0 60px;
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(255, 214, 0, 0.12) 0%,
+    rgba(255, 255, 255, 1) 70%
+  );
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.headerContent {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.pageTitle {
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--color-black) !important;
+}
+
+.pageSubtitle {
+  font-size: 1.15rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  font-weight: 300 !important;
+}

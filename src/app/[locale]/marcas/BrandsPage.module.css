@@ -1,0 +1,246 @@
+.pageWrapper {
+  padding-top: 80px;
+}
+
+.pageHeader {
+  padding: 100px 0 60px;
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(255, 214, 0, 0.08) 0%,
+    rgba(255, 255, 255, 1) 70%
+  );
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.headerContent {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.pageTitle {
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--color-black) !important;
+}
+
+.pageSubtitle {
+  font-size: 1.15rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  font-weight: 300 !important;
+}
+
+/* Quick Nav Filter Menu (Rounded Square Buttons like Header Hover) */
+.quickNav {
+  position: sticky;
+  top: 80px;
+  z-index: 900;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+  padding: 14px 0;
+}
+
+.quickNavTrack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.quickNavItem {
+  padding: 8px 18px;
+  border-radius: 10px !important;
+  background: var(--color-bg-alt);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-black);
+  white-space: nowrap;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.quickNavItem:hover {
+  background: #ffd600;
+  color: #000000;
+  border-color: rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 214, 0, 0.3);
+}
+
+/* Brand Blocks */
+.brandsList {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.brandBlock {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  position: relative;
+  scroll-margin-top: 160px;
+}
+
+.brandGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.brandTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-black);
+  margin-bottom: 16px;
+}
+
+.brandFullDesc {
+  font-size: 1.05rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  margin-bottom: 32px;
+  font-weight: 300 !important;
+}
+
+/* Action Box with Dual Buttons */
+.contactPrompt {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-md);
+  border-left: 4px solid #ffd600;
+}
+
+.promptLabel {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.brandActionButtons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* Solid Button for Official External Website */
+.officialSiteBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 18px;
+  font-size: 0.84375rem;
+  font-weight: 600 !important;
+  color: #ffffff;
+  background: #000000;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.officialSiteBtn:hover {
+  background: #1c1917;
+  color: #ffd600;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.productsTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-black);
+  margin-bottom: 16px;
+}
+
+.productList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.productItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.9375rem;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.productItem span {
+  font-weight: 300 !important;
+}
+
+.checkIcon {
+  color: #10b981;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Bottom CTA */
+.bottomCtaSection {
+  padding: 60px 0 100px;
+}
+
+.bottomCtaCard {
+  background: var(--color-black);
+  color: var(--color-white);
+  border-radius: var(--radius-xl);
+  padding: 56px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+}
+
+.bottomCtaCard h2 {
+  font-size: 2rem;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+.bottomCtaCard p {
+  color: #e2e8f0;
+  max-width: 600px;
+  font-size: 1.05rem;
+  font-weight: 300 !important;
+}
+
+.bottomCtaButtons {
+  margin-top: 12px;
+}
+
+@media (max-width: 900px) {
+  .brandGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .brandActionButtons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .officialSiteBtn,
+  .brandActionButtons a,
+  .brandActionButtons button {
+    width: 100%;
+  }
+}

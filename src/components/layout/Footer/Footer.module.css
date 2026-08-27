@@ -1,0 +1,191 @@
+.footer {
+  background-color: #0b0c10;
+  color: #e2e8f0;
+  padding: 80px 0 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1.2fr 1.6fr;
+  gap: 44px;
+  margin-bottom: 56px;
+  align-items: start;
+}
+
+.brandCol {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.logoImage {
+  filter: none;
+  width: 210px; /* Larger Indutelsa logo */
+  height: auto;
+}
+
+.brandDesc {
+  font-size: 0.9375rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  max-width: 320px;
+  font-weight: 300 !important;
+}
+
+.colTitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #ffffff !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.linkItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9375rem;
+  color: #cbd5e1;
+  transition: color var(--transition-fast);
+  text-decoration: none;
+  font-weight: 300 !important;
+}
+
+.linkItem:hover {
+  color: #ffffff;
+}
+
+.numBadge {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #000000;
+  background: #f4f4f5;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  padding: 2px 8px;
+  flex-shrink: 0;
+  line-height: 1.2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.9375rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+  font-weight: 300 !important;
+}
+
+.contactIcon {
+  color: #ffd600;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.contactItem a {
+  color: #cbd5e1;
+  transition: color var(--transition-fast);
+}
+
+.contactItem a:hover {
+  color: #ffffff;
+}
+
+/* Bottom Bar with Developer Credit (media_1787845285612.png style) */
+.bottomBar {
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: #94a3b8;
+}
+
+.copyrightText {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.copyrightText span {
+  font-weight: 300 !important;
+}
+
+.developerCredit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.creditLabel {
+  font-size: 0.6875rem;
+  font-weight: 700 !important;
+  color: #64748b;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.creditLink {
+  display: inline-flex;
+  align-items: center;
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
+}
+
+.creditLink:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.creditLogoImg {
+  object-fit: contain;
+  width: auto;
+  height: 28px;
+  filter: brightness(1.1);
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .bottomBar {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .developerCredit {
+    align-items: center;
+  }
+}

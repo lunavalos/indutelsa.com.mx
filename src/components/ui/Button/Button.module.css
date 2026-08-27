@@ -1,0 +1,93 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 0.875rem; /* 14px compact size */
+  font-weight: 600 !important; /* Medium-bold button text */
+  letter-spacing: -0.01em;
+  border-radius: 10px;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.button span,
+.button p,
+.button strong {
+  font-weight: 600 !important; /* Ensure span inside button inherits 600 font weight */
+}
+
+.button:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Sizes */
+.sm {
+  padding: 6px 14px;
+  font-size: 0.8125rem;
+}
+
+.md {
+  padding: 10px 20px;
+  font-size: 0.875rem;
+}
+
+.lg {
+  padding: 12px 24px;
+  font-size: 0.9375rem;
+}
+
+/* Primary Variant (Intense Brand Yellow) */
+.primary {
+  background-color: #ffd600;
+  color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 10px rgba(255, 214, 0, 0.35);
+}
+
+.primary:hover {
+  background-color: #ffe033;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(255, 214, 0, 0.5);
+}
+
+/* Secondary / Dark Variant */
+.secondary {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.secondary:hover {
+  background-color: #1c1917;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Outline Variant */
+.outline {
+  background-color: transparent;
+  color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.outline:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  border-color: #000000;
+  transform: translateY(-1px);
+}
+
+/* Ghost Variant */
+.ghost {
+  background-color: transparent;
+  color: var(--color-text-secondary);
+}
+
+.ghost:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #000000;
+}

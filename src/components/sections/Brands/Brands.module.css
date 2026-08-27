@@ -1,0 +1,106 @@
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 48px;
+}
+
+/* 3-Column Card Structure (Centered Image, Left-Aligned Text) */
+.featureCard {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Left-aligned text content */
+  text-align: left;
+  transition: all var(--transition-base);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.featureCard:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 0, 0, 0.18);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
+}
+
+/* 1. TOP: Centered Large Logo Area (Significantly Larger Image) */
+.logoVisualArea {
+  width: 100%;
+  height: 140px;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Image centered inside card */
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.brandLogoImg {
+  object-fit: contain;
+  max-height: 130px; /* Much larger logo image */
+  max-width: 320px;
+  width: auto;
+  filter: none !important;
+  transition: transform var(--transition-fast);
+  margin: 0 auto;
+}
+
+.featureCard:hover .brandLogoImg {
+  transform: scale(1.05);
+}
+
+/* 2. MIDDLE ROW: Number Badge + Title Side by Side (Left Aligned) */
+.titleRow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Left aligned */
+  gap: 12px;
+  margin-bottom: 14px;
+  width: 100%;
+}
+
+/* Light Gray Number Badge */
+.numBadge {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-black);
+  background: #f4f4f5;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  padding: 4px 10px;
+  flex-shrink: 0;
+}
+
+/* Slightly Smaller Card Title (media_1787846244789.png request) */
+.cardTitle {
+  font-size: 1.15rem; /* Slightly smaller title */
+  font-weight: 600;
+  color: var(--color-black);
+  margin-bottom: 0 !important;
+}
+
+/* 3. BOTTOM: Description text (Left Aligned) */
+.cardDesc {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  font-weight: 300 !important;
+  text-align: left; /* Left aligned description text */
+  margin-bottom: 0;
+  flex-grow: 1;
+}
+
+.ctaWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .cardsGrid {
+    grid-template-columns: 1fr;
+  }
+}
