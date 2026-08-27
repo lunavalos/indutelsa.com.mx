@@ -1,0 +1,130 @@
+.stickyWrapper {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 86px;
+  z-index: 900;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--color-border);
+  padding: 10px 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  transition: top var(--transition-base);
+}
+
+.carouselContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.quickNavTrack {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 4px 12px;
+  width: 100%;
+}
+
+.quickNavTrack::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 1100px) {
+  .quickNavTrack {
+    justify-content: center;
+    padding: 4px 0;
+  }
+}
+
+.quickNavItem {
+  padding: 8px 18px;
+  border-radius: 10px !important;
+  background: var(--color-bg-alt);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-black);
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  user-select: none;
+}
+
+.quickNavItem:hover,
+.activeItem {
+  background: #ffd600 !important;
+  color: #000000 !important;
+  border-color: rgba(0, 0, 0, 0.2) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 214, 0, 0.3);
+}
+
+/* Nav Chevrons for Carousel Scrolling */
+.navChevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  color: #000000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 15;
+  transition: all var(--transition-fast);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.leftChevron {
+  left: 0px;
+}
+
+.rightChevron {
+  right: 0px;
+}
+
+.chevronVisible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.navChevron:hover {
+  background: #ffd600;
+  border-color: rgba(0, 0, 0, 0.25);
+  transform: translateY(-50%) scale(1.08);
+}
+
+@media (max-width: 768px) {
+  .stickyWrapper {
+    top: 86px;
+    padding: 8px 0;
+  }
+
+  .quickNavTrack {
+    padding: 4px 28px;
+    gap: 8px;
+  }
+
+  .quickNavItem {
+    padding: 7px 14px;
+    font-size: 0.8125rem;
+  }
+
+  .navChevron {
+    width: 28px;
+    height: 28px;
+  }
+}

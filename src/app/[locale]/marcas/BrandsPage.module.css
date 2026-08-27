@@ -78,47 +78,6 @@
   }
 }
 
-/* Quick Nav Filter Menu (Rounded Square Buttons like Header Hover) */
-.quickNav {
-  position: sticky;
-  top: 80px;
-  z-index: 900;
-  background: rgba(255, 255, 255, 0.96);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--color-border);
-  padding: 14px 0;
-}
-
-.quickNavTrack {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  overflow-x: auto;
-  padding-bottom: 4px;
-}
-
-.quickNavItem {
-  padding: 8px 18px;
-  border-radius: 10px !important;
-  background: var(--color-bg-alt);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--color-black);
-  white-space: nowrap;
-  transition: all var(--transition-fast);
-  text-decoration: none;
-}
-
-.quickNavItem:hover {
-  background: #ffd600;
-  color: #000000;
-  border-color: rgba(0, 0, 0, 0.2);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(255, 214, 0, 0.3);
-}
-
 /* Brand Blocks */
 .brandsList {
   display: flex;

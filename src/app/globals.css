@@ -71,7 +71,7 @@ html, body {
   background-color: var(--color-bg);
   line-height: 1.6;
   letter-spacing: -0.011em;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 /* Enforce thin, light body text for paragraphs and descriptions */

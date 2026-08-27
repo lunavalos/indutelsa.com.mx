@@ -3,6 +3,7 @@ import { ArrowRight, CheckCircle2, ExternalLink } from 'lucide-react';
 import { getDictionary, type Locale } from '@/i18n';
 import { AnimatedSection } from '@/components/ui/AnimatedSection/AnimatedSection';
 import { Button } from '@/components/ui/Button/Button';
+import { BrandsQuickNav } from '@/components/sections/Brands/BrandsQuickNav';
 import styles from './BrandsPage.module.css';
 
 export default async function BrandsPage({
@@ -23,6 +24,14 @@ export default async function BrandsPage({
     'delta',
     'datalogic',
   ];
+
+  const brands = brandKeys.map((key) => {
+    const brand = dict.brandsPage[key as keyof typeof dict.brandsPage] as { name: string };
+    return {
+      key,
+      name: brand.name,
+    };
+  });
 
   // Official Brand Website URLs (Woerner omitted per user instruction)
   const officialUrls: Record<string, string> = {
@@ -61,21 +70,8 @@ export default async function BrandsPage({
         </div>
       </section>
 
-      {/* Quick Jump Navigation */}
-      <div className={styles.quickNav}>
-        <div className="container">
-          <div className={styles.quickNavTrack}>
-            {brandKeys.map((key) => {
-              const brand = dict.brandsPage[key as keyof typeof dict.brandsPage] as { name: string };
-              return (
-                <a key={key} href={`#${key}`} className={styles.quickNavItem}>
-                  {brand.name}
-                </a>
-              );
-            })}
-          </div>
-        </div>
-      </div>
+      {/* Quick Jump Navigation with Carousel & Chevrons */}
+      <BrandsQuickNav brands={brands} />
 
       {/* Detailed Brand Sections */}
       <section className="section">
