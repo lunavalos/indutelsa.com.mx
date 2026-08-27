@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90">
+  <g>
+    <!-- Geometric stylized W icon -->
+    <rect x="15" y="18" width="8" height="54" rx="2" fill="#00458C"/>
+    <polygon points="23,72 45,18 53,18 31,72" fill="#00458C"/>
+    <polygon points="45,18 67,72 59,72 37,18" fill="#00458C"/>
+    <rect x="67" y="18" width="8" height="54" rx="2" fill="#00458C"/>
+    <!-- WOERNER Typography -->
+    <text x="92" y="58" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="900" font-size="34" letter-spacing="3" fill="#00458C">WOERNER</text>
+  </g>
+</svg>

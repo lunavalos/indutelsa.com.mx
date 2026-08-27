@@ -31,17 +31,17 @@ export const Hero: React.FC<HeroProps> = ({ dict, locale }) => {
       <div className="container">
         <div className={styles.heroContent}>
           {/* Main Title */}
-          <h1 className={`${styles.title} animate-appear delay-100`}>
+          <h1 className={`${styles.title} ${styles.fadeInTitle}`}>
             {dict.hero.title}
           </h1>
 
           {/* Description */}
-          <p className={`${styles.description} animate-appear delay-200`}>
+          <p className={`${styles.description} ${styles.fadeInDesc}`}>
             {dict.hero.subtitle}
           </p>
 
           {/* Action Buttons */}
-          <div className={`${styles.actions} animate-appear delay-300`}>
+          <div className={`${styles.actions} ${styles.fadeInActions}`}>
             <Button
               href={`/${locale}#soluciones`}
               variant="primary"

@@ -37,8 +37,22 @@ export default async function BrandsPage({
 
   return (
     <div className={styles.pageWrapper}>
-      {/* Page Header Banner (Clean Header, No LightRays effect per user request) */}
+      {/* Page Header Banner with Video Background */}
       <section className={styles.pageHeader}>
+        {/* Background Video */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className={styles.videoBackground}
+        >
+          <source src="/videos/Indutelsa.mp4" type="video/mp4" />
+        </video>
+
+        {/* Dark Overlay Mask */}
+        <div className={styles.heroOverlay} />
+
         <div className="container">
           <div className={styles.headerContent}>
             <h1 className={styles.pageTitle}>{dict.brandsPage.title}</h1>
