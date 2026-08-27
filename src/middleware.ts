@@ -4,14 +4,7 @@ import type { NextRequest } from 'next/server';
 const locales = ['es', 'en'];
 const defaultLocale = 'es';
 
-function getLocale(request: NextRequest): string {
-  const acceptLanguage = request.headers.get('accept-language');
-  if (acceptLanguage) {
-    const preferred = acceptLanguage.split(',')[0].split('-')[0].toLowerCase();
-    if (locales.includes(preferred)) {
-      return preferred;
-    }
-  }
+function getLocale(): string {
   return defaultLocale;
 }
 
@@ -37,7 +30,7 @@ export function middleware(request: NextRequest) {
   }
 
   // Redirect to locale path
-  const locale = getLocale(request);
+  const locale = getLocale();
   request.nextUrl.pathname = `/${locale}${pathname}`;
   return NextResponse.redirect(request.nextUrl);
 }
