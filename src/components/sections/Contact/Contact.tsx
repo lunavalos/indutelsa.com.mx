@@ -55,7 +55,7 @@ export const Contact: React.FC<ContactProps> = ({ dict }) => {
                 <div>
                   <span className={styles.infoLabel}>{dict.contact.phoneLabel}</span>
                   <strong className={styles.infoVal}>
-                    <a href="tel:+528444340022">+52 (844) 434-0022</a> / <a href="tel:+528444346728">434-6728</a>
+                    <a href="tel:+528444277186">+52 (844) 427-7186</a>
                   </strong>
                 </div>
               </div>

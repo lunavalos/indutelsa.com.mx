@@ -116,9 +116,7 @@ export const Footer: React.FC<FooterProps> = ({ dict, locale }) => {
               <li className={styles.contactItem}>
                 <Phone size={16} className={styles.contactIcon} />
                 <div>
-                  <a href="tel:+528444340022">+52 (844) 434-0022</a>
-                  <br />
-                  <a href="tel:+528444346728">+52 (844) 434-6728</a>
+                  <a href="tel:+528444277186">+52 (844) 427-7186</a>
                 </div>
               </li>
               <li className={styles.contactItem}>
