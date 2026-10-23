@@ -111,6 +111,21 @@
   color: #ffffff;
 }
 
+.whatsappIcon {
+  color: #25d366;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.whatsappLink {
+  color: #cbd5e1;
+  transition: color var(--transition-fast);
+}
+
+.whatsappLink:hover {
+  color: #ffffff;
+}
+
 /* Bottom Bar with Developer Credit (media_1787845285612.png style) */
 .bottomBar {
   padding-top: 32px;

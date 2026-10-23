@@ -144,7 +144,8 @@
     "directEyebrow": "DIRECT CONTACT",
     "directTitle": "Immediate Enterprise Support",
     "directDesc": "We analyze engineering, support and automation requirements offering high cost-benefit commercial proposals.",
-    "phoneLabel": "PLANT PHONES",
+    "phoneLabel": "PLANT PHONE",
+    "whatsappLabel": "WHATSAPP",
     "emailLabel": "EMAIL ADDRESS",
     "addressLabel": "PLANT LOCATION",
     "companyNote": "Indutelsa S.A. de C.V. — Industrial Technology & Integration.",
@@ -172,6 +173,7 @@
     "navTitle": "NAVIGATION",
     "brandsTitle": "BRANDS",
     "contactTitle": "CONTACT",
+    "whatsapp": "WhatsApp",
     "developedBy": "DEVELOPED BY:",
     "about": "About Us",
     "rights": "All rights reserved."

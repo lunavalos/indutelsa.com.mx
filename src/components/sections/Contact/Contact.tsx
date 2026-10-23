@@ -5,6 +5,7 @@ import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
 import type { Dictionary } from '@/i18n';
 import { AnimatedSection } from '@/components/ui/AnimatedSection/AnimatedSection';
 import { Button } from '@/components/ui/Button/Button';
+import { WhatsAppIcon } from '@/components/ui/WhatsAppIcon/WhatsAppIcon';
 import styles from './Contact.module.css';
 
 interface ContactProps {
@@ -56,6 +57,26 @@ export const Contact: React.FC<ContactProps> = ({ dict }) => {
                   <span className={styles.infoLabel}>{dict.contact.phoneLabel}</span>
                   <strong className={styles.infoVal}>
                     <a href="tel:+528444277186">+52 (844) 427-7186</a>
+                  </strong>
+                </div>
+              </div>
+
+              <div className={styles.infoRow}>
+                <div className={`${styles.iconCircle} ${styles.iconCircleWhatsApp}`}>
+                  <WhatsAppIcon size={19} />
+                </div>
+                <div>
+                  <span className={styles.infoLabel}>{dict.contact.whatsappLabel}</span>
+                  <strong className={styles.infoVal}>
+                    <a
+                      href="https://wa.me/528442208600"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.whatsappValLink}
+                      aria-label="WhatsApp: +52 (844) 220-8600"
+                    >
+                      +52 (844) 220-8600
+                    </a>
                   </strong>
                 </div>
               </div>

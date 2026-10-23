@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { MapPin, Phone, Mail, Home, Info, Layers, Tag } from 'lucide-react';
 import type { Dictionary, Locale } from '@/i18n';
+import { WhatsAppIcon } from '@/components/ui/WhatsAppIcon/WhatsAppIcon';
 import styles from './Footer.module.css';
 
 interface FooterProps {
@@ -117,6 +118,20 @@ export const Footer: React.FC<FooterProps> = ({ dict, locale }) => {
                 <Phone size={16} className={styles.contactIcon} />
                 <div>
                   <a href="tel:+528444277186">+52 (844) 427-7186</a>
+                </div>
+              </li>
+              <li className={styles.contactItem}>
+                <WhatsAppIcon size={16} className={styles.whatsappIcon} />
+                <div>
+                  <a
+                    href="https://wa.me/528442208600"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.whatsappLink}
+                    aria-label="WhatsApp: +52 (844) 220-8600"
+                  >
+                    +52 (844) 220-8600
+                  </a>
                 </div>
               </li>
               <li className={styles.contactItem}>

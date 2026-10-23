@@ -144,7 +144,8 @@
     "directEyebrow": "CONTACTO DIRECTO",
     "directTitle": "Atención a Empresas",
     "directDesc": "Analizamos requerimientos de ingeniería, soporte y automatización ofreciendo propuestas comerciales con alto costo-beneficio.",
-    "phoneLabel": "TELÉFONOS DE PLANTA",
+    "phoneLabel": "TELÉFONO DE PLANTA",
+    "whatsappLabel": "WHATSAPP",
     "emailLabel": "CORREO ELECTRÓNICO",
     "addressLabel": "UBICACIÓN DE PLANTA",
     "companyNote": "Indutelsa S.A. de C.V. — Tecnología e Integración Industrial.",
@@ -172,6 +173,7 @@
     "navTitle": "NAVEGACIÓN",
     "brandsTitle": "MARCAS",
     "contactTitle": "CONTACTO",
+    "whatsapp": "WhatsApp",
     "developedBy": "DESARROLLADO POR:",
     "about": "Nosotros",
     "rights": "Todos los derechos reservados."
